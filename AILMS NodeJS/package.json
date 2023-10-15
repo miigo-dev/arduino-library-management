@@ -11,9 +11,4 @@
   },
   "eslintConfig": {
   },
-  "scripts": {
-    "script1": "node server.js",
-    "script2": "node JavaScript.js",
-    "start": "concurrently \"npm run script1\" \"npm run script2\""
-  }
 }
