@@ -8,29 +8,11 @@ namespace Arduino_Integrated_LMS
 {
     public partial class Form1 : Form
     {
-        private TcpClient client;
-        private NetworkStream stream;
-        private string sessionID;
-        private string websiteUrl = "http://localhost:12345";
+        private string websiteUrl = "http://192.168.1.12:80";
 
         public Form1()
         {
             InitializeComponent();
-
-            try
-            {
-                string serverIp = "127.0.0.1";
-                int serverPort = 12345;
-
-                client = new TcpClient(serverIp, serverPort);
-                stream = client.GetStream();
-
-                sessionID = Guid.NewGuid().ToString();
-            }
-            catch (Exception ex)
-            {
-                
-            }
         }
 
         private void GenerateQRCode(string data)
@@ -44,25 +26,6 @@ namespace Arduino_Integrated_LMS
             Bitmap qrCodeImage = qrCode.GetGraphic(10, Color.Black, Color.White, true);
             picBoxQR.Image = qrCodeImage;
             picBoxQR.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            SendDataToServer(data, sessionID);
-        }
-
-        private void SendDataToServer(string data, string sessionID)
-        {
-            try
-            {
-                if (stream != null)
-                {
-                    string combinedData = $"{data},{sessionID}";
-                    byte[] dataBytes = System.Text.Encoding.ASCII.GetBytes(combinedData);
-                    stream.Write(dataBytes, 0, dataBytes.Length);
-                }
-            }
-            catch (Exception ex)
-            {
-                
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,6 +33,31 @@ namespace Arduino_Integrated_LMS
             string data = txtStuNo.Text;
             GenerateQRCode(data);
         }
+
+        static async Task Main(string[] args)
+        {
+            string pythonApiUrl = "http://localhost:80/"; // Replace with the actual URL
+
+            using (HttpClient httpClient = new HttpClient())
+            {
+                try
+                {
+                    string responseJson = await httpClient.GetStringAsync(pythonApiUrl);
+
+                    // Parse the JSON response
+                    var ipAddresses = Newtonsoft.Json.JsonConvert.DeserializeObject<string[]>(responseJson);
+
+                    // Display the IP addresses in your Windows Forms application
+                    foreach (var ipAddress in ipAddresses)
+                    {
+                        MessageBox.Show(ipAddress);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error: " + e.Message);
+                }
+            }
+        }
     }
 }
-

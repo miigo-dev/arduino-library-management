@@ -1,0 +1,19 @@
+{
+  "name": "ailms-node-js",
+  "version": "0.0.0",
+  "description": "AILMS NodeJS",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {
+  },
+  "scripts": {
+    "script1": "node server.js",
+    "script2": "node JavaScript.js",
+    "start": "concurrently \"npm run script1\" \"npm run script2\""
+  }
+}
