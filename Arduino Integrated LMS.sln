@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arduino Integrated LMS", "Arduino Integrated LMS\Arduino Integrated LMS.csproj", "{2CBDECFB-0477-46B0-B54D-A1D9D266B1A9}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AILMS NodeJS", "AILMS NodeJS\AILMS NodeJS.njsproj", "{68A2AEC1-3628-4766-BA01-7210A1D36A22}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{2CBDECFB-0477-46B0-B54D-A1D9D266B1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CBDECFB-0477-46B0-B54D-A1D9D266B1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CBDECFB-0477-46B0-B54D-A1D9D266B1A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68A2AEC1-3628-4766-BA01-7210A1D36A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68A2AEC1-3628-4766-BA01-7210A1D36A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68A2AEC1-3628-4766-BA01-7210A1D36A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68A2AEC1-3628-4766-BA01-7210A1D36A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

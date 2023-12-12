@@ -23,9 +23,7 @@ server.listen(8080, () => {
 server.on('request', (req) => {
     const clientIP = req.connection.remoteAddress;
 
-    // Extract only numbers and dots from the IP address
     const ipv4Address = clientIP.match(/[0-9.]+/);
-
     if (ipv4Address) {
         const cleanedIP = ipv4Address[0];
         if (ipAddresses.indexOf(cleanedIP) === -1) {
