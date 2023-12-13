@@ -49,9 +49,9 @@ namespace Arduino_Integrated_LMS
                     }
                 }
             }
-            catch
+            catch (SqlException ex)
             {
-                MessageBox.Show("Incorrect username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Database error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {

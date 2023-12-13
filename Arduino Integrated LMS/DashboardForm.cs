@@ -102,5 +102,46 @@ namespace Arduino_Integrated_LMS
             this.Hide();
             loginForm.Show();
         }
+
+        bool qrExpand = false;
+
+        private void qrTransition_Tick(object sender, EventArgs e)
+        {
+            if (qrExpand == false)
+            {
+                qrContainer.Height += 10;
+                if (qrContainer.Height > 110)
+                {
+                    qrTransition.Stop();
+                    qrExpand = true;
+                }
+            }
+            else
+            {
+                qrContainer.Height -= 10;
+                if (qrContainer.Height <= 36)
+                {
+                    qrTransition.Stop();
+                    qrExpand = false;
+                }
+            }
+        }
+
+        private void btnScanQR_Click(object sender, EventArgs e)
+        {
+            qrTransition.Start();
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            CheckoutScanQRForm checkoutQR = new CheckoutScanQRForm();
+            loadFormInPanel(checkoutQR);
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            ReturnScanQRForm returnQR = new ReturnScanQRForm();
+            loadFormInPanel(returnQR);
+        }
     }
 }
