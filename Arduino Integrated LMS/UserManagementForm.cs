@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Arduino_Integrated_LMS
 {
-    public partial class RegisterForm : Form
+    public partial class UserManagementForm : Form
     {
-        public RegisterForm()
+        public UserManagementForm()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            LoginForm loginForm = new LoginForm();
-            this.Hide();
-            loginForm.Show();
         }
     }
 }

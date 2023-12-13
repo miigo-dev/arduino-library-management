@@ -58,13 +58,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnHam.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAGpJREFUSEtj
-        GAWDF0hLSxtISEjYUwuDzIMajQBAiQdA/J9aWFJS8gLUaAQASigAsQMVsQLU6FEwmMGQTMJA/ABqNAIA
-        BUeT8EgEoIgCYqzJkUyMGfFAQdqXwtDMiC0pkoWxZsZRMEgAAwMADn+Rc42A5IgAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnDashboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAOhJREFUSEvt
@@ -122,7 +115,7 @@
         gFbDfuEfdkUTKEWySNi6djWOWxJ+t9UEShz7eLMq/4ii+AbkwxtlY/AQ6gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnChangeUsername.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnChangePass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAANZJREFUSEvt
         lOsNwjAMhDtKR2MDugndpN0ANoANyibmrjlLBfURF5U/5JOsyO6dmyiPqlBYxMxqxBlxnQTzWpLvQKMW
@@ -131,7 +124,7 @@
         BgQfR47OvhV8gkacNQ/DeEwVzGN7UPgnquoFM6Nd6p0ZQLYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnChangePass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnChangeUsername.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAANZJREFUSEvt
         lOsNwjAMhDtKR2MDugndpN0ANoANyibmrjlLBfURF5U/5JOsyO6dmyiPqlBYxMxqxBlxnQTzWpLvQKMW
@@ -153,8 +146,8 @@
   <metadata name="accTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="sidebarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>140, 17</value>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>77</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

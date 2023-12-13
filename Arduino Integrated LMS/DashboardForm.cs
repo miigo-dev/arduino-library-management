@@ -17,6 +17,46 @@ namespace Arduino_Integrated_LMS
             InitializeComponent();
         }
 
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadFormInPanel(Form formName) 
+        {
+            formName.TopLevel = false;
+            formName.FormBorderStyle = FormBorderStyle.None;
+            formName.Dock = DockStyle.Fill;
+            pnMain.Controls.Add(formName);
+            pnMain.Tag = formName;
+            formName.BringToFront();
+            formName.Show();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            MainDashboardForm mainDashboardForm = new MainDashboardForm();
+            loadFormInPanel(mainDashboardForm);
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            UserManagementForm userManagementForm = new UserManagementForm();
+            loadFormInPanel(userManagementForm);
+        }
+
+        private void btnShelf_Click(object sender, EventArgs e)
+        {
+            ShelfManagementForm shelfManagementForm = new ShelfManagementForm();
+            loadFormInPanel(shelfManagementForm);
+        }
+
+        private void btnReturns_Click(object sender, EventArgs e)
+        {
+            ReturnsForm returnsForm = new ReturnsForm();
+            loadFormInPanel(returnsForm);
+        }
+
         bool accExpand = false;
         private void accTransition_Tick(object sender, EventArgs e)
         {
@@ -28,7 +68,8 @@ namespace Arduino_Integrated_LMS
                     accTransition.Stop();
                     accExpand = true;
                 }
-            } else
+            }
+            else
             {
                 accContainer.Height -= 10;
                 if (accContainer.Height <= 45)
@@ -44,39 +85,21 @@ namespace Arduino_Integrated_LMS
             accTransition.Start();
         }
 
+        private void btnChangeUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangePass_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnLogout_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm();
+            this.Hide();
             loginForm.Show();
-            DashboardForm dashboardForm = new DashboardForm();
-            dashboardForm.Close();
-        }
-
-        bool sidebardExpand = true;
-
-        private void sidebarTransition_Tick(object sender, EventArgs e)
-        {
-            if (sidebardExpand) {
-                sidebar.Width -= 5;
-                if (sidebar.Width <= 50)
-                {
-                    sidebardExpand = false;
-                    sidebarTransition.Stop();
-                }
-            } else
-            {
-                sidebar.Width += 5;
-                if (sidebar.Width >= 219)
-                {
-                    sidebardExpand = true;
-                    sidebarTransition.Stop();
-                }
-            }
-        }
-
-        private void btnHam_Click(object sender, EventArgs e)
-        {
-            sidebarTransition.Start();
         }
     }
 }
