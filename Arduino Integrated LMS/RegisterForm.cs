@@ -17,11 +17,23 @@ namespace Arduino_Integrated_LMS
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnRegSignUp_Click(object sender, EventArgs e)
+        {
+            DashboardForm dashboardForm = new DashboardForm();
+            dashboardForm.Show();
+            this.Hide();
+        }
+
+        private void btnRegLogin_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm();
-            this.Hide();
             loginForm.Show();
+            this.Hide();
         }
     }
 }

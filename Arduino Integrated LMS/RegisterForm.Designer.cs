@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbRememberMe = new System.Windows.Forms.CheckBox();
-            this.lblLogin = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.txtConfirmPass = new System.Windows.Forms.TextBox();
+            this.btnRegLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRegSignUp = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.showPass = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.txtRegConfirmPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtRegUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtRegPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtRegPassword = new System.Windows.Forms.TextBox();
-            this.txtRegUsername = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,81 +47,171 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.cbRememberMe);
-            this.panel1.Controls.Add(this.lblLogin);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.txtConfirmPass);
+            this.panel1.Controls.Add(this.btnRegLogin);
+            this.panel1.Controls.Add(this.btnRegSignUp);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.showPass);
+            this.panel1.Controls.Add(this.txtRegConfirmPass);
+            this.panel1.Controls.Add(this.txtRegUsername);
+            this.panel1.Controls.Add(this.txtRegPassword);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txtRegPassword);
-            this.panel1.Controls.Add(this.txtRegUsername);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 1041);
+            this.panel1.Size = new System.Drawing.Size(436, 1041);
             this.panel1.TabIndex = 0;
             // 
-            // cbRememberMe
+            // btnRegLogin
             // 
-            this.cbRememberMe.AutoSize = true;
-            this.cbRememberMe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbRememberMe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.cbRememberMe.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.cbRememberMe.Location = new System.Drawing.Point(78, 263);
-            this.cbRememberMe.Name = "cbRememberMe";
-            this.cbRememberMe.Size = new System.Drawing.Size(109, 19);
-            this.cbRememberMe.TabIndex = 11;
-            this.cbRememberMe.Text = "Show Password";
-            this.cbRememberMe.UseVisualStyleBackColor = true;
+            this.btnRegLogin.AutoRoundedCorners = true;
+            this.btnRegLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.btnRegLogin.BorderRadius = 15;
+            this.btnRegLogin.BorderThickness = 1;
+            this.btnRegLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRegLogin.FillColor = System.Drawing.Color.White;
+            this.btnRegLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRegLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnRegLogin.Location = new System.Drawing.Point(221, 668);
+            this.btnRegLogin.Name = "btnRegLogin";
+            this.btnRegLogin.Size = new System.Drawing.Size(140, 33);
+            this.btnRegLogin.TabIndex = 19;
+            this.btnRegLogin.Text = "Log in";
+            this.btnRegLogin.Click += new System.EventHandler(this.btnRegLogin_Click);
             // 
-            // lblLogin
+            // btnRegSignUp
             // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.lblLogin.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblLogin.Location = new System.Drawing.Point(112, 358);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(40, 15);
-            this.lblLogin.TabIndex = 10;
-            this.lblLogin.Text = "Log in";
-            this.lblLogin.Click += new System.EventHandler(this.label5_Click);
+            this.btnRegSignUp.AutoRoundedCorners = true;
+            this.btnRegSignUp.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegSignUp.BorderRadius = 15;
+            this.btnRegSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegSignUp.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRegSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(255)))), ((int)(((byte)(202)))));
+            this.btnRegSignUp.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.btnRegSignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRegSignUp.ForeColor = System.Drawing.Color.Black;
+            this.btnRegSignUp.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btnRegSignUp.Location = new System.Drawing.Point(75, 668);
+            this.btnRegSignUp.Name = "btnRegSignUp";
+            this.btnRegSignUp.Size = new System.Drawing.Size(140, 33);
+            this.btnRegSignUp.TabIndex = 18;
+            this.btnRegSignUp.Text = "Sign up";
+            this.btnRegSignUp.Click += new System.EventHandler(this.btnRegSignUp_Click);
             // 
-            // label4
+            // label1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 345);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Already have an account?";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(117, 628);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 15);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Show Password";
             // 
-            // btnLogin
+            // showPass
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Location = new System.Drawing.Point(40, 293);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(185, 26);
-            this.btnLogin.TabIndex = 8;
-            this.btnLogin.Text = "Register";
-            this.btnLogin.UseVisualStyleBackColor = false;
+            this.showPass.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.showPass.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.showPass.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.showPass.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.showPass.Location = new System.Drawing.Point(80, 626);
+            this.showPass.Name = "showPass";
+            this.showPass.Size = new System.Drawing.Size(35, 20);
+            this.showPass.TabIndex = 16;
+            this.showPass.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.showPass.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.showPass.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.showPass.UncheckedState.InnerColor = System.Drawing.Color.White;
             // 
-            // txtConfirmPass
+            // txtRegConfirmPass
             // 
-            this.txtConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfirmPass.Location = new System.Drawing.Point(39, 238);
-            this.txtConfirmPass.Name = "txtConfirmPass";
-            this.txtConfirmPass.Size = new System.Drawing.Size(186, 20);
-            this.txtConfirmPass.TabIndex = 7;
-            this.txtConfirmPass.UseSystemPasswordChar = true;
+            this.txtRegConfirmPass.AutoRoundedCorners = true;
+            this.txtRegConfirmPass.BorderColor = System.Drawing.Color.Green;
+            this.txtRegConfirmPass.BorderRadius = 17;
+            this.txtRegConfirmPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRegConfirmPass.DefaultText = "";
+            this.txtRegConfirmPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRegConfirmPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRegConfirmPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegConfirmPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegConfirmPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegConfirmPass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRegConfirmPass.ForeColor = System.Drawing.Color.Black;
+            this.txtRegConfirmPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegConfirmPass.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtRegConfirmPass.IconLeft")));
+            this.txtRegConfirmPass.Location = new System.Drawing.Point(75, 584);
+            this.txtRegConfirmPass.Name = "txtRegConfirmPass";
+            this.txtRegConfirmPass.PasswordChar = '●';
+            this.txtRegConfirmPass.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtRegConfirmPass.PlaceholderText = "Confirm Password";
+            this.txtRegConfirmPass.SelectedText = "";
+            this.txtRegConfirmPass.Size = new System.Drawing.Size(286, 36);
+            this.txtRegConfirmPass.TabIndex = 14;
+            // 
+            // txtRegUsername
+            // 
+            this.txtRegUsername.AutoRoundedCorners = true;
+            this.txtRegUsername.BorderColor = System.Drawing.Color.Green;
+            this.txtRegUsername.BorderRadius = 17;
+            this.txtRegUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRegUsername.DefaultText = "";
+            this.txtRegUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRegUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRegUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRegUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtRegUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegUsername.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtRegUsername.IconLeft")));
+            this.txtRegUsername.Location = new System.Drawing.Point(75, 500);
+            this.txtRegUsername.Name = "txtRegUsername";
+            this.txtRegUsername.PasswordChar = '\0';
+            this.txtRegUsername.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtRegUsername.PlaceholderText = "Username";
+            this.txtRegUsername.SelectedText = "";
+            this.txtRegUsername.Size = new System.Drawing.Size(286, 36);
+            this.txtRegUsername.TabIndex = 12;
+            // 
+            // txtRegPassword
+            // 
+            this.txtRegPassword.AutoRoundedCorners = true;
+            this.txtRegPassword.BorderColor = System.Drawing.Color.Green;
+            this.txtRegPassword.BorderRadius = 17;
+            this.txtRegPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRegPassword.DefaultText = "";
+            this.txtRegPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRegPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRegPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRegPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtRegPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtRegPassword.IconLeft")));
+            this.txtRegPassword.Location = new System.Drawing.Point(75, 542);
+            this.txtRegPassword.Name = "txtRegPassword";
+            this.txtRegPassword.PasswordChar = '●';
+            this.txtRegPassword.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtRegPassword.PlaceholderText = "Password";
+            this.txtRegPassword.SelectedText = "";
+            this.txtRegPassword.Size = new System.Drawing.Size(286, 36);
+            this.txtRegPassword.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label3.Location = new System.Drawing.Point(106, 157);
+            this.label3.Location = new System.Drawing.Point(192, 456);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 4;
@@ -131,36 +221,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(64, 133);
+            this.label2.Location = new System.Drawing.Point(150, 432);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Create an Account";
             // 
-            // txtRegPassword
-            // 
-            this.txtRegPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegPassword.Location = new System.Drawing.Point(39, 213);
-            this.txtRegPassword.Name = "txtRegPassword";
-            this.txtRegPassword.ShortcutsEnabled = false;
-            this.txtRegPassword.Size = new System.Drawing.Size(186, 20);
-            this.txtRegPassword.TabIndex = 5;
-            this.txtRegPassword.UseSystemPasswordChar = true;
-            // 
-            // txtRegUsername
-            // 
-            this.txtRegUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegUsername.Location = new System.Drawing.Point(39, 188);
-            this.txtRegUsername.Name = "txtRegUsername";
-            this.txtRegUsername.Size = new System.Drawing.Size(186, 20);
-            this.txtRegUsername.TabIndex = 4;
-            this.txtRegUsername.Tag = "";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(82, 49);
+            this.pictureBox1.Location = new System.Drawing.Point(168, 339);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 80);
             this.pictureBox1.TabIndex = 3;
@@ -178,6 +249,7 @@
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";
+            this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -189,14 +261,14 @@
 
         private Panel panel1;
         private PictureBox pictureBox1;
-        private TextBox txtRegUsername;
-        private TextBox txtRegPassword;
         private Label label2;
         private Label label3;
-        private TextBox txtConfirmPass;
-        private Button btnLogin;
-        private Label lblLogin;
-        private Label label4;
-        private CheckBox cbRememberMe;
+        private Guna.UI2.WinForms.Guna2TextBox txtRegConfirmPass;
+        private Guna.UI2.WinForms.Guna2TextBox txtRegUsername;
+        private Guna.UI2.WinForms.Guna2TextBox txtRegPassword;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch showPass;
+        private Guna.UI2.WinForms.Guna2Button btnRegLogin;
+        private Guna.UI2.WinForms.Guna2GradientButton btnRegSignUp;
     }
 }

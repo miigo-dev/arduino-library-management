@@ -17,11 +17,6 @@ namespace Arduino_Integrated_LMS
             InitializeComponent();
         }
 
-        private void DashboardForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void loadFormInPanel(Form formName) 
         {
             formName.TopLevel = false;
@@ -31,6 +26,12 @@ namespace Arduino_Integrated_LMS
             pnMain.Tag = formName;
             formName.BringToFront();
             formName.Show();
+        }
+
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+            MainDashboardForm mainDashboardForm = new MainDashboardForm();
+            loadFormInPanel(mainDashboardForm);
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -72,7 +73,7 @@ namespace Arduino_Integrated_LMS
             else
             {
                 accContainer.Height -= 10;
-                if (accContainer.Height <= 45)
+                if (accContainer.Height <= 36)
                 {
                     accTransition.Stop();
                     accExpand = false;

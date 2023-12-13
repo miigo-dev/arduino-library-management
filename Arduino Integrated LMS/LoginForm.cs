@@ -24,11 +24,19 @@ namespace Arduino_Integrated_LMS
             this.Hide();
         }
 
-        private void lblCreateAcc_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             RegisterForm registerForm = new RegisterForm();
-            this.Hide();
             registerForm.Show();
+            this.Hide();
+        }
+
+        private void showPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (showPass.Checked)
+            {
+                
+            }
         }
     }
 }
