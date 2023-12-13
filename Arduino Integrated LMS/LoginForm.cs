@@ -24,35 +24,40 @@ namespace Arduino_Integrated_LMS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            using (conn)
+            try
             {
-                try
+                conn.Open();
+
+                string query = $"SELECT * FROM users WHERE username = '{txtUsername.Text}' AND password = '{txtPassword.Text}'";
+
+                using (SqlDataAdapter sda = new SqlDataAdapter(query, conn))
                 {
-                    conn.Open();
-                    string query = $"SELECT * FROM users WHERE username = '{txtUsername.Text}' AND password = '{txtPassword.Text}'";
+                    DataTable dataTable = new DataTable();
+                    sda.Fill(dataTable);
 
-                    using (SqlDataAdapter sda = new SqlDataAdapter(query, conn))
+                    if (dataTable.Rows.Count > 0)
                     {
-                        DataTable dataTable = new DataTable();
-                        sda.Fill(dataTable);
-
-                        if (dataTable.Rows.Count > 0)
-                        {
-                            DashboardForm dashboardForm = new DashboardForm();
-                            dashboardForm.Show();
-                            this.Hide();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Incorrect username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            txtUsername.Clear();
-                            txtPassword.Clear();
-                        }
+                        DashboardForm dashboardForm = new DashboardForm();
+                        dashboardForm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtUsername.Clear();
+                        txtPassword.Clear();
                     }
                 }
-                catch (SqlException ex)
+            }
+            catch
+            {
+                MessageBox.Show("Incorrect username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
                 {
-                    MessageBox.Show("Incorrect username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    conn.Close();
                 }
             }
         }
