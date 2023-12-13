@@ -12,7 +12,6 @@ namespace Arduino_Integrated_LMS
 {
     public partial class LoginForm : Form
     {
-
         public LoginForm()
         {
             InitializeComponent();

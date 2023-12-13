@@ -60,15 +60,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(308, 1041);
+            this.panel1.Size = new System.Drawing.Size(264, 902);
             this.panel1.TabIndex = 0;
             // 
             // lblForgotPass
             // 
             this.lblForgotPass.AutoSize = true;
-            this.lblForgotPass.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.lblForgotPass.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.lblForgotPass.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblForgotPass.Location = new System.Drawing.Point(101, 445);
+            this.lblForgotPass.Location = new System.Drawing.Point(80, 386);
             this.lblForgotPass.Name = "lblForgotPass";
             this.lblForgotPass.Size = new System.Drawing.Size(104, 15);
             this.lblForgotPass.TabIndex = 8;
@@ -79,7 +79,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(104, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(82, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 80);
             this.pictureBox1.TabIndex = 2;
@@ -88,9 +88,9 @@
             // lblCreateAcc
             // 
             this.lblCreateAcc.AutoSize = true;
-            this.lblCreateAcc.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.lblCreateAcc.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.lblCreateAcc.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblCreateAcc.Location = new System.Drawing.Point(101, 383);
+            this.lblCreateAcc.Location = new System.Drawing.Point(79, 332);
             this.lblCreateAcc.Name = "lblCreateAcc";
             this.lblCreateAcc.Size = new System.Drawing.Size(107, 15);
             this.lblCreateAcc.TabIndex = 7;
@@ -100,9 +100,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(87, 368);
+            this.label4.Location = new System.Drawing.Point(71, 319);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 15);
+            this.label4.Size = new System.Drawing.Size(122, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Don\'t have an account?";
             // 
@@ -110,9 +110,9 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.PaleGreen;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Location = new System.Drawing.Point(46, 312);
+            this.btnLogin.Location = new System.Drawing.Point(40, 270);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(216, 30);
+            this.btnLogin.Size = new System.Drawing.Size(185, 26);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Log in";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -121,11 +121,12 @@
             // cbRememberMe
             // 
             this.cbRememberMe.AutoSize = true;
-            this.cbRememberMe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cbRememberMe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbRememberMe.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.cbRememberMe.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.cbRememberMe.Location = new System.Drawing.Point(46, 275);
+            this.cbRememberMe.Location = new System.Drawing.Point(78, 238);
             this.cbRememberMe.Name = "cbRememberMe";
-            this.cbRememberMe.Size = new System.Drawing.Size(112, 19);
+            this.cbRememberMe.Size = new System.Drawing.Size(109, 19);
             this.cbRememberMe.TabIndex = 4;
             this.cbRememberMe.Text = "Show Password";
             this.cbRememberMe.UseVisualStyleBackColor = true;
@@ -133,8 +134,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(110, 181);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label3.Location = new System.Drawing.Point(88, 157);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 15);
             this.label3.TabIndex = 3;
@@ -143,8 +144,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(70, 153);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(48, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 20);
             this.label2.TabIndex = 2;
@@ -152,29 +153,30 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(46, 246);
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPassword.Location = new System.Drawing.Point(39, 213);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PlaceholderText = "Password";
-            this.txtPassword.Size = new System.Drawing.Size(216, 23);
+            this.txtPassword.Size = new System.Drawing.Size(186, 20);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(46, 217);
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsername.Location = new System.Drawing.Point(39, 188);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PlaceholderText = "Username";
-            this.txtUsername.Size = new System.Drawing.Size(216, 23);
+            this.txtUsername.Size = new System.Drawing.Size(186, 20);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Tag = "";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1632, 902);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Name = "LoginForm";

@@ -74,7 +74,7 @@
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(308, 1041);
+            this.sidebar.Size = new System.Drawing.Size(264, 1041);
             this.sidebar.TabIndex = 1;
             // 
             // pnDashboard
@@ -82,8 +82,8 @@
             this.pnDashboard.Controls.Add(this.btnDashboard);
             this.pnDashboard.Location = new System.Drawing.Point(3, 3);
             this.pnDashboard.Name = "pnDashboard";
-            this.pnDashboard.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.pnDashboard.Size = new System.Drawing.Size(305, 39);
+            this.pnDashboard.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
+            this.pnDashboard.Size = new System.Drawing.Size(261, 34);
             this.pnDashboard.TabIndex = 3;
             // 
             // btnDashboard
@@ -92,10 +92,10 @@
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(-8, -20);
+            this.btnDashboard.Location = new System.Drawing.Point(-7, -17);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(321, 79);
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnDashboard.Size = new System.Drawing.Size(275, 68);
             this.btnDashboard.TabIndex = 2;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = false;
@@ -104,10 +104,10 @@
             // pnUserManagement
             // 
             this.pnUserManagement.Controls.Add(this.btnUser);
-            this.pnUserManagement.Location = new System.Drawing.Point(3, 48);
+            this.pnUserManagement.Location = new System.Drawing.Point(3, 43);
             this.pnUserManagement.Name = "pnUserManagement";
-            this.pnUserManagement.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.pnUserManagement.Size = new System.Drawing.Size(305, 39);
+            this.pnUserManagement.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
+            this.pnUserManagement.Size = new System.Drawing.Size(261, 34);
             this.pnUserManagement.TabIndex = 4;
             // 
             // btnUser
@@ -116,10 +116,10 @@
             this.btnUser.ForeColor = System.Drawing.Color.White;
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUser.Location = new System.Drawing.Point(-8, -20);
+            this.btnUser.Location = new System.Drawing.Point(-7, -17);
             this.btnUser.Name = "btnUser";
-            this.btnUser.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnUser.Size = new System.Drawing.Size(321, 79);
+            this.btnUser.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnUser.Size = new System.Drawing.Size(275, 68);
             this.btnUser.TabIndex = 2;
             this.btnUser.Text = "User Management";
             this.btnUser.UseVisualStyleBackColor = false;
@@ -128,10 +128,10 @@
             // pnShelfManagement
             // 
             this.pnShelfManagement.Controls.Add(this.btnShelf);
-            this.pnShelfManagement.Location = new System.Drawing.Point(3, 93);
+            this.pnShelfManagement.Location = new System.Drawing.Point(3, 83);
             this.pnShelfManagement.Name = "pnShelfManagement";
-            this.pnShelfManagement.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.pnShelfManagement.Size = new System.Drawing.Size(305, 39);
+            this.pnShelfManagement.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
+            this.pnShelfManagement.Size = new System.Drawing.Size(261, 34);
             this.pnShelfManagement.TabIndex = 4;
             // 
             // btnShelf
@@ -140,10 +140,10 @@
             this.btnShelf.ForeColor = System.Drawing.Color.White;
             this.btnShelf.Image = ((System.Drawing.Image)(resources.GetObject("btnShelf.Image")));
             this.btnShelf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShelf.Location = new System.Drawing.Point(-8, -20);
+            this.btnShelf.Location = new System.Drawing.Point(-7, -17);
             this.btnShelf.Name = "btnShelf";
-            this.btnShelf.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnShelf.Size = new System.Drawing.Size(321, 79);
+            this.btnShelf.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnShelf.Size = new System.Drawing.Size(275, 68);
             this.btnShelf.TabIndex = 2;
             this.btnShelf.Text = "Shelf Management";
             this.btnShelf.UseVisualStyleBackColor = false;
@@ -152,10 +152,10 @@
             // pnReturns
             // 
             this.pnReturns.Controls.Add(this.btnReturns);
-            this.pnReturns.Location = new System.Drawing.Point(3, 138);
+            this.pnReturns.Location = new System.Drawing.Point(3, 123);
             this.pnReturns.Name = "pnReturns";
-            this.pnReturns.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.pnReturns.Size = new System.Drawing.Size(305, 39);
+            this.pnReturns.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
+            this.pnReturns.Size = new System.Drawing.Size(261, 34);
             this.pnReturns.TabIndex = 5;
             // 
             // btnReturns
@@ -164,10 +164,10 @@
             this.btnReturns.ForeColor = System.Drawing.Color.White;
             this.btnReturns.Image = ((System.Drawing.Image)(resources.GetObject("btnReturns.Image")));
             this.btnReturns.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReturns.Location = new System.Drawing.Point(-8, -20);
+            this.btnReturns.Location = new System.Drawing.Point(-7, -17);
             this.btnReturns.Name = "btnReturns";
-            this.btnReturns.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnReturns.Size = new System.Drawing.Size(321, 79);
+            this.btnReturns.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnReturns.Size = new System.Drawing.Size(275, 68);
             this.btnReturns.TabIndex = 2;
             this.btnReturns.Text = "Returns";
             this.btnReturns.UseVisualStyleBackColor = false;
@@ -179,9 +179,9 @@
             this.accContainer.Controls.Add(this.panel7);
             this.accContainer.Controls.Add(this.panel8);
             this.accContainer.Controls.Add(this.panel6);
-            this.accContainer.Location = new System.Drawing.Point(3, 183);
+            this.accContainer.Location = new System.Drawing.Point(3, 163);
             this.accContainer.Name = "accContainer";
-            this.accContainer.Size = new System.Drawing.Size(305, 39);
+            this.accContainer.Size = new System.Drawing.Size(261, 34);
             this.accContainer.TabIndex = 7;
             // 
             // panel7
@@ -190,8 +190,8 @@
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.panel7.Size = new System.Drawing.Size(305, 39);
+            this.panel7.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
+            this.panel7.Size = new System.Drawing.Size(261, 34);
             this.panel7.TabIndex = 7;
             // 
             // btnAccount
@@ -200,10 +200,10 @@
             this.btnAccount.ForeColor = System.Drawing.Color.White;
             this.btnAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAccount.Image")));
             this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(-8, -20);
+            this.btnAccount.Location = new System.Drawing.Point(-7, -17);
             this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnAccount.Size = new System.Drawing.Size(321, 79);
+            this.btnAccount.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnAccount.Size = new System.Drawing.Size(275, 68);
             this.btnAccount.TabIndex = 2;
             this.btnAccount.Text = "Account";
             this.btnAccount.UseVisualStyleBackColor = false;
@@ -212,11 +212,11 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.btnChangePass);
-            this.panel8.Location = new System.Drawing.Point(0, 39);
+            this.panel8.Location = new System.Drawing.Point(0, 34);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.panel8.Size = new System.Drawing.Size(305, 39);
+            this.panel8.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
+            this.panel8.Size = new System.Drawing.Size(261, 34);
             this.panel8.TabIndex = 9;
             // 
             // btnChangePass
@@ -225,10 +225,10 @@
             this.btnChangePass.ForeColor = System.Drawing.Color.White;
             this.btnChangePass.Image = ((System.Drawing.Image)(resources.GetObject("btnChangePass.Image")));
             this.btnChangePass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChangePass.Location = new System.Drawing.Point(-8, -20);
+            this.btnChangePass.Location = new System.Drawing.Point(-7, -17);
             this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnChangePass.Size = new System.Drawing.Size(321, 79);
+            this.btnChangePass.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnChangePass.Size = new System.Drawing.Size(275, 68);
             this.btnChangePass.TabIndex = 2;
             this.btnChangePass.Text = "Change Password";
             this.btnChangePass.UseVisualStyleBackColor = false;
@@ -237,11 +237,11 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.btnChangeUsername);
-            this.panel6.Location = new System.Drawing.Point(0, 78);
+            this.panel6.Location = new System.Drawing.Point(0, 68);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.panel6.Size = new System.Drawing.Size(305, 39);
+            this.panel6.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
+            this.panel6.Size = new System.Drawing.Size(261, 34);
             this.panel6.TabIndex = 8;
             // 
             // btnChangeUsername
@@ -250,10 +250,10 @@
             this.btnChangeUsername.ForeColor = System.Drawing.Color.White;
             this.btnChangeUsername.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeUsername.Image")));
             this.btnChangeUsername.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChangeUsername.Location = new System.Drawing.Point(-8, -20);
+            this.btnChangeUsername.Location = new System.Drawing.Point(-7, -17);
             this.btnChangeUsername.Name = "btnChangeUsername";
-            this.btnChangeUsername.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnChangeUsername.Size = new System.Drawing.Size(321, 79);
+            this.btnChangeUsername.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnChangeUsername.Size = new System.Drawing.Size(275, 68);
             this.btnChangeUsername.TabIndex = 2;
             this.btnChangeUsername.Text = "Change Username";
             this.btnChangeUsername.UseVisualStyleBackColor = false;
@@ -262,10 +262,10 @@
             // pnLogout
             // 
             this.pnLogout.Controls.Add(this.btnLogout);
-            this.pnLogout.Location = new System.Drawing.Point(3, 228);
+            this.pnLogout.Location = new System.Drawing.Point(3, 203);
             this.pnLogout.Name = "pnLogout";
-            this.pnLogout.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.pnLogout.Size = new System.Drawing.Size(305, 39);
+            this.pnLogout.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
+            this.pnLogout.Size = new System.Drawing.Size(261, 34);
             this.pnLogout.TabIndex = 6;
             // 
             // btnLogout
@@ -274,10 +274,10 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(-8, -20);
+            this.btnLogout.Location = new System.Drawing.Point(-7, -17);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(321, 79);
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnLogout.Size = new System.Drawing.Size(275, 68);
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -291,15 +291,15 @@
             // pnMain
             // 
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnMain.Location = new System.Drawing.Point(308, 0);
+            this.pnMain.Location = new System.Drawing.Point(264, 0);
             this.pnMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(1596, 1041);
+            this.pnMain.Size = new System.Drawing.Size(1640, 1041);
             this.pnMain.TabIndex = 3;
             // 
             // DashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
