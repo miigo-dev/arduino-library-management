@@ -17,6 +17,7 @@ namespace Arduino_Integrated_LMS
             InitializeComponent();
         }
 
+
         private void RegisterForm_Load(object sender, EventArgs e)
         {
             
