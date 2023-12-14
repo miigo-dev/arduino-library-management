@@ -73,7 +73,11 @@ namespace Arduino_Integrated_LMS
         {
             if (showPass.Checked)
             {
-                
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '●';
             }
         }
 

@@ -99,8 +99,8 @@ namespace Arduino_Integrated_LMS
         private void btnLogout_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm();
-            this.Hide();
             loginForm.Show();
+            this.Dispose();
         }
 
         bool qrExpand = false;

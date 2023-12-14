@@ -97,5 +97,19 @@ namespace Arduino_Integrated_LMS
         {
 
         }
+
+        private void showPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (showPass.Checked)
+            {
+                txtRegPassword.PasswordChar = '\0';
+                txtRegConfirmPass.PasswordChar = '\0';
+            }
+            else
+            {
+                txtRegPassword.PasswordChar = '●';
+                txtRegConfirmPass.PasswordChar= '●';
+            }
+        }
     }
 }

@@ -131,6 +131,7 @@
             this.showPass.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.showPass.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.showPass.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.showPass.CheckedChanged += new System.EventHandler(this.showPass_CheckedChanged);
             // 
             // txtRegConfirmPass
             // 

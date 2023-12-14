@@ -40,7 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.forgotPass = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -207,7 +206,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.forgotPass);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -223,17 +221,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(436, 1041);
             this.panel1.TabIndex = 0;
-            // 
-            // forgotPass
-            // 
-            this.forgotPass.AutoSize = true;
-            this.forgotPass.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forgotPass.ForeColor = System.Drawing.Color.Gray;
-            this.forgotPass.Location = new System.Drawing.Point(262, 607);
-            this.forgotPass.Name = "forgotPass";
-            this.forgotPass.Size = new System.Drawing.Size(99, 15);
-            this.forgotPass.TabIndex = 16;
-            this.forgotPass.Text = "Forgot Password";
             // 
             // LoginForm
             // 
@@ -268,6 +255,5 @@
         private Label label1;
         private PictureBox pictureBox2;
         private Panel panel1;
-        private Label forgotPass;
     }
 }
