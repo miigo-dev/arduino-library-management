@@ -100,7 +100,7 @@ namespace Arduino_Integrated_LMS
         {
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
-            this.Dispose();
+            this.Hide();
         }
 
         bool qrExpand = false;

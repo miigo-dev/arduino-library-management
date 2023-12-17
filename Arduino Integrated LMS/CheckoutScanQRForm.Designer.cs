@@ -29,117 +29,124 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckoutScanQRForm));
-            this.btnStart = new System.Windows.Forms.Button();
-            this.cboDevice = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtQRCode = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnStop = new System.Windows.Forms.Button();
+            this.txtStudentNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.btnStop = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStart = new Guna.UI2.WinForms.Guna2Button();
+            this.cbDevice = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnStart
-            // 
-            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(17, 91);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(236, 23);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // cboDevice
-            // 
-            this.cboDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDevice.FormattingEnabled = true;
-            this.cboDevice.Location = new System.Drawing.Point(531, 20);
-            this.cboDevice.Name = "cboDevice";
-            this.cboDevice.Size = new System.Drawing.Size(504, 21);
-            this.cboDevice.TabIndex = 2;
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(531, 45);
+            this.pictureBox1.Location = new System.Drawing.Point(350, 54);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(504, 517);
+            this.pictureBox1.Size = new System.Drawing.Size(783, 434);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // txtQRCode
+            // txtStudentNumber
             // 
-            this.txtQRCode.Location = new System.Drawing.Point(1041, 45);
-            this.txtQRCode.Multiline = true;
-            this.txtQRCode.Name = "txtQRCode";
-            this.txtQRCode.Size = new System.Drawing.Size(266, 515);
-            this.txtQRCode.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 30);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Enter Student Number:";
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(17, 49);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(236, 36);
-            this.guna2TextBox1.TabIndex = 6;
-            // 
-            // btnStop
-            // 
-            this.btnStop.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStop.Location = new System.Drawing.Point(17, 120);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(236, 23);
-            this.btnStop.TabIndex = 7;
-            this.btnStop.Text = "Stop";
-            this.btnStop.UseVisualStyleBackColor = true;
+            this.txtStudentNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStudentNumber.DefaultText = "";
+            this.txtStudentNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStudentNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStudentNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStudentNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStudentNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStudentNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStudentNumber.ForeColor = System.Drawing.Color.Black;
+            this.txtStudentNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStudentNumber.Location = new System.Drawing.Point(12, 12);
+            this.txtStudentNumber.Name = "txtStudentNumber";
+            this.txtStudentNumber.PasswordChar = '\0';
+            this.txtStudentNumber.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtStudentNumber.PlaceholderText = "Enter Student Number";
+            this.txtStudentNumber.SelectedText = "";
+            this.txtStudentNumber.Size = new System.Drawing.Size(332, 36);
+            this.txtStudentNumber.TabIndex = 6;
             // 
             // listView1
             // 
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(259, 49);
+            this.listView1.Location = new System.Drawing.Point(12, 54);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(266, 511);
+            this.listView1.Size = new System.Drawing.Size(332, 434);
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.List;
+            // 
+            // btnStop
+            // 
+            this.btnStop.AutoRoundedCorners = true;
+            this.btnStop.BackColor = System.Drawing.Color.Transparent;
+            this.btnStop.BorderRadius = 16;
+            this.btnStop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStop.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStop.FillColor = System.Drawing.Color.Tomato;
+            this.btnStop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStop.ForeColor = System.Drawing.Color.Black;
+            this.btnStop.Location = new System.Drawing.Point(181, 494);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(159, 35);
+            this.btnStop.TabIndex = 10;
+            this.btnStop.Text = "Stop";
+            this.btnStop.UseTransparentBackground = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
+            // btnStart
+            // 
+            this.btnStart.AutoRoundedCorners = true;
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.BorderRadius = 16;
+            this.btnStart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStart.FillColor = System.Drawing.Color.SpringGreen;
+            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStart.ForeColor = System.Drawing.Color.Black;
+            this.btnStart.Location = new System.Drawing.Point(12, 494);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(163, 35);
+            this.btnStart.TabIndex = 11;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseTransparentBackground = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click_1);
+            // 
+            // cbDevice
+            // 
+            this.cbDevice.AutoRoundedCorners = true;
+            this.cbDevice.BackColor = System.Drawing.Color.Transparent;
+            this.cbDevice.BorderRadius = 17;
+            this.cbDevice.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDevice.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDevice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDevice.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbDevice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbDevice.ItemHeight = 30;
+            this.cbDevice.Location = new System.Drawing.Point(350, 12);
+            this.cbDevice.Name = "cbDevice";
+            this.cbDevice.Size = new System.Drawing.Size(783, 36);
+            this.cbDevice.TabIndex = 12;
             // 
             // CheckoutScanQRForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1468, 575);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.btnStop);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtQRCode);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.cboDevice);
+            this.ClientSize = new System.Drawing.Size(1145, 755);
+            this.Controls.Add(this.cbDevice);
             this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.txtStudentNumber);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CheckoutScanQRForm";
             this.Text = "CheckoutScanQRForm";
@@ -147,19 +154,15 @@
             this.Load += new System.EventHandler(this.CheckoutScanQRForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Button btnStart;
-        private ComboBox cboDevice;
         private PictureBox pictureBox1;
-        private TextBox txtQRCode;
-        private Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Button btnStop;
+        private Guna.UI2.WinForms.Guna2TextBox txtStudentNumber;
         private ListView listView1;
+        private Guna.UI2.WinForms.Guna2Button btnStop;
+        private Guna.UI2.WinForms.Guna2Button btnStart;
+        private Guna.UI2.WinForms.Guna2ComboBox cbDevice;
     }
 }
