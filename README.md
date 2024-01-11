@@ -33,7 +33,6 @@ The Arduino-ILMS leverages Arduino microcontrollers and related technologies to 
 - Accuracy in accounting for books removed without proper borrowing.
 - Regular maintenance and updates essential for long-term reliability.
 
-**Modules:**
 **Hardware Modules:**
 - Arduino Mega 2560 Rev3 x 1
 - 1.3” I2C OLED Display Module x 1
