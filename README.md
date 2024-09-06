@@ -1,9 +1,9 @@
-# Arduino Integrated Library Management System (Arduino-ILMS)
+# Arduino Integrated Library Management System 
 
 ![Arduino ILMS Logo](https://i.imgur.com/3iSb7Av.png)
 
 **Introduction:**
-The Arduino Integrated Library Management System (Arduino-ILMS) is an innovative solution designed to enhance traditional library management using Arduino microcontrollers. This system automates core library operations, improves accuracy, and provides a user-friendly interface for both library staff and patrons.
+The Arduino Integrated Library Management System is an innovative solution designed to enhance traditional library management using Arduino microcontrollers. This system automates core library operations, improves accuracy, and provides a user-friendly interface for both library staff and patrons.
 
 **Project Note:**
 This project was developed as part of an educational project for the 2024 ICT Summit at STI College Las Piñas.
@@ -17,7 +17,7 @@ This project was developed as part of an educational project for the 2024 ICT Su
 - **Scalability:** Scale the system for libraries of varying sizes.
 
 **Overview of Current Technology:**
-The Arduino-ILMS leverages Arduino microcontrollers and related technologies to automate core library operations. Current implementations include sensors for accurate book tracking, QR code systems for book accumulation, and integration with desktop or online platforms.
+The Arduino Integrated Library Management System leverages Arduino microcontrollers and related technologies to automate core library operations. Current implementations include sensors for accurate book tracking, QR code systems for book accumulation, and integration with desktop or online platforms.
 
 **Scope and Limitations:**
 *Scope:*
@@ -44,18 +44,4 @@ The Arduino-ILMS leverages Arduino microcontrollers and related technologies to 
 - User Management
 - Shelf Management
 - Return Module
-- Database
-
-**Getting Started:**
-1. Clone or download the repository to your local machine.
-2. Install the required hardware components.
-3. Upload the software modules to the Arduino Mega 2560.
-4. Connect the hardware modules as per the provided documentation.
-5. Start the Arduino IDE and navigate to "Tools" -> "Arduino Integrated LMS."
-
-**Contact:**
-For inquiries or feedback, contact the project maintainer:
-Miguel Luayon - miigo.mnl@gmail.com
-
-**Acknowledgments:**
-Special thanks to the Arduino community and contributors for their support.
+- MSSQL Database
