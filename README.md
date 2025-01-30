@@ -1,4 +1,4 @@
-# Arduino Integrated Library Management System 
+# Arduino Integrated Library Management System (AI-LMS)
 
 ![Arduino ILMS Logo](https://i.imgur.com/3iSb7Av.png)
 
